@@ -25,9 +25,12 @@
         var idlang = 0
 
         function changeL(id) {
-            if (id == 0) {
-                if (idlang == 1) {
-                    prompt("Want to sure? Change language to Afrikaans? Please Type 'CHANGE' in the box:", "DEFAULT")
+            if (id == 1) {
+                if (idlang == 0) {
+                    let type = prompt("Want to sure? Change language to France? Please Type 'CHANGE' in the box:", "DEFAULT")
+                    if (type == "CHANGE") {
+                        idlang = 1
+                    }
                 }
             }
         }
