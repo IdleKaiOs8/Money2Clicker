@@ -8,18 +8,23 @@
 </head>
 <body>
     <h3>Language</h3>
-    <select name="Language" id="lang">
+    <select class="s1" name="Language" id="lang">
         <option value="-1" selected disabled>Choose a language.</option>
-        <optgroup label="Popular">
+        <optgroup class="g1" label="Popular">
             <option value="0">United States</option>
             <option value="1">France</option>
         </optgroup>
-        <optgroup label="All Languages Supported">
+        <optgroup class="g2" label="All Languages Supported">
             <option value="2">Afrikaans</option>
             <option value="3">Shqiptare</option>
         </optgroup>
     </select>
-    <button type="submit">Change</button>
+    <button onclick="changeL(0)" type="submit">Change</button>
     <h5>Tap dropdown to change.</h5>
+    <script>
+        function changeL(id) {
+            
+        }
+    </script>
 </body>
 </html>
