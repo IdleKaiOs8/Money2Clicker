@@ -20,7 +20,7 @@
         </optgroup>
     </select>
     <button onclick="changeL(+document.querySelector('.s1').value)" type="submit">Change</button>
-    <h5>Tap dropdown to change.</h5>
+    <h5 class="lan2">Tap dropdown to change.</h5>
     <script>
         var idlang = 0
         var idlang1 = ["Language", "Langue"]
@@ -44,6 +44,11 @@
                 }
             }
         }
+
+        setInterval(() => {
+            document.querySelector(".lan1").innerHTML = idlang1[idlang]
+            document.querySelector(".lan2").innerHTML = idlang2[idlang]
+        }, 100);
     </script>
 </body>
 </html>
