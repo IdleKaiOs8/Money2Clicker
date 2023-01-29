@@ -24,6 +24,7 @@
     <script>
         var idlang = 0
         var idlang1 = ["Language", "Langue"]
+        var idlang2 = ["Tap dropdown to change.", "Appuyez sur la liste déroulante pour changer."]
 
         function changeL(id) {
             if (id == 1) {
@@ -31,6 +32,14 @@
                     let type = prompt("Want to sure? Change language to France? Please Type 'CHANGE' in the box:", "DEFAULT")
                     if (type == "CHANGE") {
                         idlang = 1
+                    }
+                }
+            }
+            if (id == 0) {
+                if (idlang == 1) {
+                    let type = prompt("Vous voulez être sûr ? Changer de langue en United States ? Veuillez saisir 'CHANGE' dans la boite:", "DEFAULT")
+                    if (type == "CHANGE") {
+                        idlang = 0
                     }
                 }
             }
